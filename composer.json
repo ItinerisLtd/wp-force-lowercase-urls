@@ -1,0 +1,86 @@
+{
+    "name": "itinerisltd/wp-force-lowercase-urls",
+    "type": "wordpress-plugin",
+    "description": "Force uppercase URLs to lowercase.",
+    "keywords": [
+        "lowercase",
+        "uppercase",
+        "url",
+        "plugin",
+        "wordpress",
+        "wp"
+    ],
+    "homepage": "https://github.com/ItinerisLtd/wp-force-lowercase-urls",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Itineris Limited",
+            "email": "dev@itineris.co.uk",
+            "homepage": "https://itineris.co.uk/",
+            "role": "Company"
+        },
+        {
+            "name": "Lee Hanbury-Pickett",
+            "email": "lee.hanbury@gmail.com",
+            "homepage": "https://github.com/codepuncher",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4"
+    },
+    "require-dev": {
+        "itinerisltd/itineris-wp-coding-standards": "^0.4.0",
+        "roave/security-advisories": "dev-master"
+    },
+    "config": {
+        "platform": {
+            "php": "7.4"
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Itineris\\WpForceLowercaseUrls\\": "src/"
+        }
+    },
+    "archive": {
+        "exclude": [
+            "*",
+            "!*LICENSE*",
+            "!*.php",
+            "!/README.txt",
+            "!src",
+            "test",
+            "tests"
+        ]
+    },
+    "prefer-stable": true,
+    "scripts": {
+        "pretag": [
+            "composer update",
+            "@style:check",
+            "composer normalize",
+            "github_changelog_generator --no-verbose",
+            "npx doctoc README.md"
+        ],
+        "release:build": [
+            "rm -fr vendor",
+            "composer install --no-dev --prefer-dist --optimize-autoloader",
+            "rm -fr release wordpress",
+            "composer archive --format=zip --dir=release --file=wp-force-lowercase-urls"
+        ],
+        "style:check": "phpcs",
+        "style:fix": "phpcbf"
+    },
+    "support": {
+        "email": "dev@itineris.co.uk",
+        "issues": "https://github.com/ItinerisLtd/wp-force-lowercase-urls/issues",
+        "source": "https://github.com/ItinerisLtd/wp-force-lowercase-urls"
+    }
+}
