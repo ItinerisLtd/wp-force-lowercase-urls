@@ -1,6 +1,7 @@
 # WP Force Lowercase URLs
 
-[![CircleCI](https://circleci.com/gh/ItinerisLtd/wp-force-lowercase-urls.svg?style=svg)](https://circleci.com/gh/ItinerisLtd/wp-force-lowercase-urls)
+[![CI](https://github.com/ItinerisLtd/wp-force-lowercase-urls/actions/workflows/ci.yml/badge.svg)](https://github.com/ItinerisLtd/wp-force-lowercase-urls/actions/workflows/ci.yml)
+[![Releases](https://github.com/ItinerisLtd/wp-force-lowercase-urls/actions/workflows/releases.yml/badge.svg)](https://github.com/ItinerisLtd/wp-force-lowercase-urls/actions/workflows/releases.yml)
 [![Packagist Version](https://img.shields.io/packagist/v/itinerisltd/wp-force-lowercase-urls.svg?label=release&style=flat-square)](https://packagist.org/packages/itinerisltd/wp-force-lowercase-urls)
 [![PHP from Packagist](https://img.shields.io/packagist/php-v/itinerisltd/wp-force-lowercase-urls.svg?style=flat-square)](https://packagist.org/packages/itinerisltd/wp-force-lowercase-urls)
 [![Packagist Downloads](https://img.shields.io/packagist/dt/itinerisltd/wp-force-lowercase-urls.svg?label=packagist%20downloads&style=flat-square)](https://packagist.org/packages/itinerisltd/wp-force-lowercase-urls/stats)
