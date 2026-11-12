@@ -6,7 +6,7 @@
  * Description:       Force uppercase URLs to lowercase.
  * Version:           0.1.0
  * Requires at least: 5.8
- * Requires PHP:      7.4
+ * Requires PHP:      8.4
  * Author:            Itineris Limited
  * Author URI:        https://www.itineris.co.uk/
  * Text Domain:       wp-force-lowercase-urls
