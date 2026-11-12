@@ -27,17 +27,20 @@
         }
     ],
     "require": {
-        "php": "^7.4"
+        "php": "^8.4"
     },
     "require-dev": {
-        "itinerisltd/itineris-wp-coding-standards": "^0.4.0",
+        "itinerisltd/itineris-wp-coding-standards": "^2.0",
         "roave/security-advisories": "dev-master"
     },
     "config": {
         "platform": {
-            "php": "7.4"
+            "php": "8.4.27"
         },
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     },
     "extra": {
         "branch-alias": {

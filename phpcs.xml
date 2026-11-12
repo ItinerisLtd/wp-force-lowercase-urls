@@ -18,11 +18,13 @@
     <!-- Use Itineris WP Coding Standards -->
     <rule ref="Itineris"/>
 
-    <config name="minimum_supported_wp_version" value="5.8"/>
+    <config name="minimum_supported_wp_version" value="7.1"/>
 
     <rule ref="WordPress.WP.I18n">
         <properties>
-            <property name="text_domain" type="array" value="wp-force-lowercase-urls"/>
+            <property name="text_domain" type="array">
+                <element value="wp-force-lowercase-urls"/>
+            </property>
         </properties>
     </rule>
 </ruleset>

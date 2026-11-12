@@ -6,14 +6,8 @@ namespace Itineris\WpForceLowercaseUrls;
 
 final class Plugin
 {
-    /**
-     * @var string
-     */
     protected string $path;
 
-    /**
-     * @var string|null
-     */
     protected ?string $queryString;
 
     protected const REDIRECT_STATUS_CODE = 301;

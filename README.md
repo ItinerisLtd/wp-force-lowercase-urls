@@ -49,8 +49,8 @@ Prevent issues caused by pages existing on URLs of various casing.
 
 ## Minimum Requirements
 
-- PHP v7.4
-- WordPress v5.8
+- PHP v8.4
+- WordPress v7.1
 
 ## Installation
 
