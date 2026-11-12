@@ -50,7 +50,7 @@ Prevent issues caused by pages existing on URLs of various casing.
 ## Minimum Requirements
 
 - PHP v8.4
-- WordPress v5.8
+- WordPress v7.1
 
 ## Installation
 
